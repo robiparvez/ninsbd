@@ -169,7 +169,6 @@ npm install @yet-another-react-lightbox/zoom @yet-another-react-lightbox/slidesh
 ### Data Management
 
 - Static exports in ES6 modules
-- No state management library (Redux mentioned in old docs but not used)
 - Data separated by component/feature
 
 ### Styling
