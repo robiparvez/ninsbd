@@ -81,7 +81,7 @@ public/
 
    ```bash
    git clone <repository-url>
-   cd ninsbd-lite
+   cd ninsbd
    ```
 
 2. Install dependencies:
