@@ -1,0 +1,132 @@
+/* Facebook Messenger Chat Button - Mobile Optimized */
+.fb-messenger-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0084ff;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 48px; /* Minimum tap target */
+    min-height: 48px;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.fb-messenger-button:hover {
+    background-color: #0073e6;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    color: #fff;
+    text-decoration: none;
+}
+
+.fb-messenger-button:active {
+    transform: scale(0.98);
+}
+
+.fb-messenger-button svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .fb-messenger-button {
+        bottom: 20px;
+        right: 15px;
+        padding: 12px 16px;
+        font-size: 14px;
+        /* Ensure proper tap target size */
+        min-width: 52px;
+        min-height: 52px;
+    }
+
+    .fb-messenger-button svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* Compact version for very small screens */
+@media (max-width: 480px) {
+    .fb-messenger-button {
+        /* Show icon only on very small screens to save space */
+        padding: 14px;
+        font-size: 0;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        gap: 0;
+    }
+
+    .fb-messenger-button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fb-messenger-button::after {
+        content: '';
+    }
+}
+
+/* Landscape orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .fb-messenger-button {
+        bottom: 15px;
+        right: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+
+/* Small devices - icon only */
+@media (max-width: 360px) {
+    .fb-messenger-button {
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        bottom: 18px;
+        right: 12px;
+    }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .fb-messenger-button {
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .fb-messenger-button {
+        box-shadow: 0 4px 16px rgba(0, 132, 255, 0.25);
+    }
+}
+
+/* Focus state for accessibility */
+.fb-messenger-button:focus-visible {
+    outline: 3px solid #0084ff;
+    outline-offset: 3px;
+}
+
+/* Prevent text selection on tap */
+.fb-messenger-button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}

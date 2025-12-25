@@ -1,0 +1,140 @@
+.nav-link {
+    font-size: 1.2rem;
+    padding: 0 1rem !important;
+    text-decoration: none !important;
+}
+
+.nav-link a {
+    text-decoration: none !important;
+}
+
+.navbar-brand img,
+.navbar-brand h6 {
+    cursor: pointer;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header-styles {
+    height: 100vh;
+}
+
+@media (max-width: 575px) {
+    .enroll-btn {
+        margin-top: 1rem;
+    }
+}
+
+.div-col {
+    width: 100%;
+    height: calc(100vh - 76px);
+    flex: 1 !important;
+    padding: 0;
+    max-width: 100% !important;
+}
+
+.carousel-item img {
+    /* width: 100%;
+    height: calc(100vh); */
+    width: 900px;
+    height: 500px;
+    margin: auto;
+}
+
+@media (max-width: 900px) {
+    .carousel {
+        width: auto;
+        height: auto;
+    }
+}
+
+.carousel-caption {
+    right: 35%;
+    top: 35%;
+}
+
+.new-line {
+    white-space: pre-line;
+}
+
+@media (max-width: 750px) {
+    .carousel-caption {
+        top: 20%;
+    }
+}
+
+@media (max-width: 550px) {
+    .carousel-caption {
+        width: 80%;
+    }
+    .carousel-caption h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Carousel arrows and indicators styling */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 100% 100% !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    width: 40px !important;
+    height: 40px !important;
+    background-size: 100% 100% !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.8 !important;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1 !important;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+    margin: 0 4px !important;
+}
+
+.carousel-indicators .active {
+    background-color: #fff !important;
+    transform: scale(1.2);
+}
+
+/* Carousel caption animation - slide in from top */
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-item.active .slide-in-top {
+    animation: slideInTop 0.8s ease-out forwards;
+}
+
+/* Ensure carousel caption text is white */
+.carousel-caption h1 {
+    color: #fff !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+    font-weight: bold !important;
+}

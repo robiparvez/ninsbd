@@ -1,0 +1,113 @@
+/* Scroll to Top Button Styles */
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 90px; /* Position above Facebook Messenger button */
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #165587 0%, #1a6ba3 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(22, 85, 135, 0.3);
+    z-index: 9998; /* Below messenger button (9999) */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px) scale(0.8);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-to-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.scroll-to-top-button:hover {
+    background: linear-gradient(135deg, #1a6ba3 0%, #165587 100%);
+    box-shadow: 0 6px 16px rgba(22, 85, 135, 0.4);
+    transform: translateY(-3px) scale(1.05);
+}
+
+.scroll-to-top-button:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+.scroll-to-top-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .scroll-to-top-button {
+        width: 50px;
+        height: 50px;
+        bottom: 95px; /* Adjusted for mobile spacing */
+        right: 15px;
+        /* Ensure minimum tap target size of 48x48px */
+    }
+
+    .scroll-to-top-button svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .scroll-to-top-button {
+        bottom: 85px;
+        right: 12px;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .scroll-to-top-button {
+        bottom: 90px;
+        right: 12px;
+    }
+}
+
+/* Prevent button overlap on very small screens */
+@media (max-width: 360px) {
+    .scroll-to-top-button {
+        width: 48px;
+        height: 48px;
+        bottom: 88px;
+        right: 10px;
+    }
+}
+
+/* High DPI displays (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .scroll-to-top-button {
+        box-shadow: 0 4px 16px rgba(22, 85, 135, 0.35);
+    }
+}
+
+/* Accessibility: Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .scroll-to-top-button {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        transform: none;
+    }
+
+    .scroll-to-top-button:hover,
+    .scroll-to-top-button:active {
+        transform: none;
+    }
+}
+
+/* Focus visible for keyboard navigation */
+.scroll-to-top-button:focus-visible {
+    outline: 3px solid #165587;
+    outline-offset: 3px;
+}

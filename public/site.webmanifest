@@ -1,0 +1,27 @@
+{
+    "name": "নর্দান ইন্সটিটিউট অব নার্সিং সায়েন্স (এনআইএনএস)",
+    "short_name": "NINS",
+    "description": "Professional Nursing Education Institute in Rangpur, Bangladesh",
+    "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "100x100",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#165587",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
