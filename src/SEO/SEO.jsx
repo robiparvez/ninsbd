@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from '@vuer-ai/react-helmet-async';
 
 /**
  * SEO component for managing meta tags, Open Graph, and structured data
