@@ -1,3 +1,4 @@
+import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import aboutPic from '../../images/cover/nins-cover-original.png';
 import { AIM_OBJECTIVES, CHARACTERISTICS } from './Data';
