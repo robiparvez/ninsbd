@@ -1,10 +1,10 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import principal from '../../images/principal/principal.jpg';
-import { PRINCIPAL_QUOTE } from './Data';
-import './principal.css';
+import chairman from '../../images/chairman/chairman.png';
+import { CHAIRMAN_QUOTE } from './Data';
+import './chairman.css';
 
-export default function Principal() {
+export default function Chairman() {
     const navigate = useNavigate();
 
     return (
@@ -13,11 +13,10 @@ export default function Principal() {
                 <Row>
                     <Col xs={10} lg={8} md={6} className='mx-auto'>
                         <h1 className='text-capitalize'>
-                            <strong className='banner-title'>অধ্যক্ষের বাণী</strong>
+                            <strong className='banner-title'>চেয়ারম্যানের বাণী</strong>
                         </h1>
                         <div className='my-4 text-muted w-100 about-text line-height new-line' style={{ lineHeight: '2rem', textAlign: 'justify' }} data-aos='fade-right'>
-                            {/* {PRINCIPAL_QUOTE} */}
-                            <div dangerouslySetInnerHTML={{ __html: PRINCIPAL_QUOTE }} />
+                            <div dangerouslySetInnerHTML={{ __html: CHAIRMAN_QUOTE }} />
                         </div>
                         <Link to='/about' className='btn btn-outline-primary text-uppercase learn-more' data-aos='fade-right'>
                             <button
@@ -37,13 +36,10 @@ export default function Principal() {
                     </Col>
                     <Col xs={10} lg={4} md={6} className='mx-auto my-5 align-self-center' data-aos='fade-in'>
                         <div className='about-img_container'>
-                            <Image src={principal} fluid />
+                            <Image src={chairman} fluid />
                         </div>
-                        {/* <p className='my-4 text-muted w-100 about-text line-height new-line text-center font-weight-bold' style={{ lineHeight: '2rem' }} data-aos='fade-in'>
-                            অধ্যক্ষ
-                        </p> */}
                         <h4 className='my-4 text-muted w-100 about-text text-center' style={{ lineHeight: '2rem' }} data-aos='fade-in'>
-                            অধ্যক্ষ
+                            চেয়ারম্যান
                         </h4>
                     </Col>
                 </Row>

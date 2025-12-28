@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel, Col, Container, Image, Row } from 'react-bootstrap';
 import slide01 from '../../images/slides/slide-01.jpg';
 import slide02 from '../../images/slides/slide-02.jpg';

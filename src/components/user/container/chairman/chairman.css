@@ -1,0 +1,50 @@
+@media (max-width: 770px) {
+    .about-text {
+        width: 100% !important;
+    }
+}
+
+.new-line {
+    white-space: pre-line;
+}
+
+.about-img_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    color: brown;
+    font-size: 3rem;
+}
+
+.aboutpage {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../images/cover/nins-cover.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* background-image: url('../../images/cover/nins-cover.png');
+    filter: blur(2px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+/* .learn-more:hover a {
+    color: #ffffff;
+} */
+
+.learn-more:hover button {
+    color: #ffffff;
+}

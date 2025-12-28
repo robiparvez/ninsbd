@@ -1,7 +1,7 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React, { useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from '@vuer-ai/react-helmet-async';
 import Router from './components/router/Router';
 import ScrollToTopButton from './components/shared/ScrollToTopButton';
 import { initGA, trackPageLoadTime, trackScrollDepth } from './services/analytics';

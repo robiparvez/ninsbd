@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import './contact.css';
 import { HELP_TEXT, EMAIL_ADDRESS, FACEBOOK_LINK, LOCATION, PHONE_NUMBER } from '../../container/footer/Data';

@@ -1,4 +1,3 @@
-import React from 'react';
 import SEO from 'src/SEO/SEO';
 import { pageSEO } from 'src/SEO/seoConfig';
 import { organizationSchema, websiteSchema } from 'src/SEO/schemas';
@@ -7,6 +6,7 @@ import Principal from '../principal/Principal';
 import News from '../news/News';
 import CourseContainer from '../course/CourseContainer';
 import PhotoGallery from '../gallery/PhotoGallery';
+import Chairman from '../chairman/Chairman';
 
 const HomePage = () => {
     // Combine multiple schemas for home page
@@ -28,6 +28,7 @@ const HomePage = () => {
                 structuredData={homePageSchema}
             />
             <Slider />
+            <Chairman />
             <Principal />
             <News />
             <CourseContainer />

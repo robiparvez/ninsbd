@@ -1,4 +1,3 @@
-import React from 'react';
 import { FB_CHAT } from '../../Data';
 import './FbMessengerChat.css';
 

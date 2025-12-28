@@ -37,12 +37,12 @@ export const TEACHERS = [
         position: 'লেকচারার',
         qualification: 'এমবিবিএস, এম আব্দুর রহিম মেডিকেল কলেজ'
     },
-    {
+   /*  {
         name: 'মিঃ শিবুতোষ রায়',
         image: MrSibutoshRoy,
         position: 'লেকচারার',
         qualification: 'বিএস এমএসসি (পদার্থ), রাজশাহী বিশ্ববিদ্যালয়'
-    },
+    }, */
     {
         name: 'মোঃ শাহিনুর আলম',
         image: MdShahinurAlam,
