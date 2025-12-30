@@ -1,94 +1,96 @@
-import { AtikaAkter, DrAshikulIslam, DrKonaKhatun, DrMohsinReza, DrRafiaAkter, DrRifatAra, DrRifatNasrin, DrWalimaJoba, EhosanHabib, MdAbdusSamad, MdShahinurAlam, MinaraBegum, MrSibutoshRoy, RabeyaSultana, SaidaAkhter } from './TeacherData';
+import teacher1 from '../../images/teachers/1.jpg';
+import teacher2 from '../../images/teachers/2.jpg';
+import teacher3 from '../../images/teachers/3.jpg';
+import teacher4 from '../../images/teachers/4.jpg';
+import blankProfilePicture from '../../images/teachers/blank-profile-picture.png';
 
 export const TEACHERS = [
     {
-        name: 'মোঃ আব্দুস সামাদ',
-        image: MdAbdusSamad,
+        name: 'সরদার মোঃ আবুল কাশেম',
+        image: teacher1,
+        registrationNumber: '৮৯৯',
         position: 'অধ্যক্ষ',
-        qualification: 'বিএসসি ইন নার্সিং, সেবা মহাবিদ্যালয়'
+        qualification: 'এমপিএইচ',
+        mobileNumber: '০১৭১০-৯৮৭৫৮০'
     },
     {
-        name: 'ডাঃ আশিকুল ইসলাম',
-        image: DrAshikulIslam,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
+        name: 'সানজিদা আক্তার',
+        image: teacher2,
+        registrationNumber: '১৫৮৪৮',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১স৭৩৬৯০০৬৪'
     },
     {
-        name: 'ডাঃ রাফিয়া আক্তার',
-        image: DrRafiaAkter,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
+        name: 'মো: আরিফুল হক',
+        image: teacher3,
+        registrationNumber: '২৬০১১',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭৫০৮৭২৮৬৩'
     },
     {
-        name: 'ডাঃ রিফাত নাসরিন',
-        image: DrRifatNasrin,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
+        name: 'মোসা: শারমিন আক্তার',
+        image: teacher4,
+        registrationNumber: '১৭৭০৭',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭০১০৮৩৭৪৮'
     },
     {
-        name: 'ডাঃ ওয়ালিমা জবা',
-        image: DrWalimaJoba,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
+        name: 'মোসা: তানজিলা আফরিন',
+        image: blankProfilePicture,
+        registrationNumber: '২৬০২৮',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭৩১২২১৭৮৭'
     },
     {
-        name: 'ডাঃ কনা খাতুন',
-        image: DrKonaKhatun,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এম আব্দুর রহিম মেডিকেল কলেজ'
-    },
-   /*  {
-        name: 'মিঃ শিবুতোষ রায়',
-        image: MrSibutoshRoy,
-        position: 'লেকচারার',
-        qualification: 'বিএস এমএসসি (পদার্থ), রাজশাহী বিশ্ববিদ্যালয়'
-    }, */
-    {
-        name: 'মোঃ শাহিনুর আলম',
-        image: MdShahinurAlam,
-        position: 'লেকচারার',
-        qualification: 'বিএসএস, বদরগঞ্জ ডিগ্রী কলেজ'
+        name: 'মোসা: নুসরাত জাহান',
+        image: blankProfilePicture,
+        registrationNumber: '২৭০৬৬',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭২২১৮১০৩১'
     },
     {
-        name: 'এহসান হাবিব',
-        image: EhosanHabib,
-        position: 'লেকচারার',
-        qualification: 'বিএ অনার্স এমএ (ইংরেজি)'
+        name: 'মোসা: নাহিদা আক্তার',
+        image: blankProfilePicture,
+        registrationNumber: '১৫৮৪০',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭৬১৩৭৫৪৭৭'
     },
     {
-        name: 'সাঈদা আক্তার',
-        image: SaidaAkhter,
-        position: 'ক্লিনিকাল ইন্সট্রাক্টর',
-        qualification: 'বিএসসি ইন নার্সিং, রংপুর নার্সিং কলেজ'
+        name: 'আক্রিমা জাহান',
+        image: blankProfilePicture,
+        registrationNumber: '২৬০১৮',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭২২১৭৮১১৭'
     },
     {
-        name: 'মিনারা বেগম',
-        image: MinaraBegum,
-        position: 'নার্সিং ইন্সট্রাক্টর ',
-        qualification: 'বিএসসি ইন নার্সিং, রংপুর নার্সিং কলেজ'
+        name: 'মো: শাহরিয়ার নাজিম জয়',
+        image: blankProfilePicture,
+        registrationNumber: '২৬০১৪',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৭৫১২০৫০৩৯'
     },
     {
-        name: 'আতিকা আক্তার',
-        image: AtikaAkter,
-        position: 'নার্সিং ইন্সট্রাক্টর ',
-        qualification: 'বিএসসি ইন নার্সিং, রংপুর আর্মি নার্সিং কলেজ'
+        name: 'মো: হুমায়ুন কবির',
+        image: blankProfilePicture,
+        registrationNumber: '২৬০২৬',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৬২৮২৭৭৩১৯'
     },
     {
-        name: 'রাবেয়া সুলতানা ',
-        image: RabeyaSultana,
-        position: 'নার্সিং ইন্সট্রাক্টর ',
-        qualification: 'বিএসসি ইন নার্সিং, রংপুর আর্মি নার্সিং কলেজ'
+        name: 'মো: কাউসার আলম',
+        image: blankProfilePicture,
+        registrationNumber: '১৫৮৫৩',
+        position: 'নার্সিং ইন্সট্রাক্টর',
+        qualification: 'বি.এসসি ইন নার্সিং',
+        mobileNumber: '০১৬৪৮২৮৪৩৭৬'
     }
-    /* {
-        name: 'ডাঃ মহসিন রেজা',
-        image: DrMohsinReza,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
-    }, */
-    /* {
-        name: 'ডাঃ রিফাত আরা',
-        image: DrRifatAra,
-        position: 'লেকচারার',
-        qualification: 'এমবিবিএস, এনপিএমসিএইচ'
-    }, */
 ];
