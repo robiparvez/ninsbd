@@ -105,9 +105,9 @@ export const trackScrollDepth = () => {
         const windowHeight = window.innerHeight;
         const documentHeight = document.documentElement.scrollHeight;
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollPercentage = (scrollTop + windowHeight) / documentHeight * 100;
+        const scrollPercentage = ((scrollTop + windowHeight) / documentHeight) * 100;
 
-        depths.forEach(depth => {
+        depths.forEach((depth) => {
             if (scrollPercentage >= depth && !trackedDepths.has(depth)) {
                 trackedDepths.add(depth);
                 logEvent('scroll', 'Engagement', `${depth}%`, depth);

@@ -1,9 +1,9 @@
 import { Col, Container, Image, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
-import { INSTITUTE_NAME } from '../../Data';
-import college from '../../images/logos/nins-logo-footer.png';
-import { EMAIL_ADDRESS, FACEBOOK_LINK, LOCATION, PHONE_NUMBER } from './Data';
+import { INSTITUTE_NAME } from 'src/components/user/Data';
+import college from 'src/components/user/images/logos/nins-logo-footer.png';
+import { EMAIL_ADDRESS, FACEBOOK_LINK, LOCATION, PHONE_NUMBER } from 'src/components/user/Data';
 import './footer.css';
 import MapContainer from './MapContainer';
 
@@ -28,7 +28,6 @@ export default function Footer() {
                         <div className='justify-content-start align-items-center flex-column' style={{ borderTop: '2px solid green', paddingTop: '0.5rem' }}>
                             <p className='d-flex flex-wrap'>
                                 <span className='mr-4 footer-icon'>
-                                    {/* <i className='fas fa-map'></i> */}
                                     <i className='fas fa-map-marker'></i>
                                 </span>
                                 <span className='new-line'>{LOCATION}</span>
@@ -43,7 +42,6 @@ export default function Footer() {
                                 <span className='mr-4 footer-icon'>
                                     <i className='fas fa-envelope'></i>
                                 </span>
-                                {/* <span>{EMAIL_ADDRESS}</span> */}
                                 <span>
                                     <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
                                 </span>

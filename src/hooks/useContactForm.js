@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import emailjs from 'emailjs-com';
-import { emailJsConfig } from '../components/user/components/contact/Data';
+import emailjs from '@emailjs/browser';
+import { emailJsConfig } from 'src/components/user/Data';
 
 /**
  * Custom hook for handling contact form logic
@@ -20,8 +20,7 @@ export const useContactForm = () => {
         reset
     } = useForm();
 
-    const onSubmit = async (data) => {
-        console.log(data);
+    const onSubmit = async () => {
         setIsSubmitting(true);
 
         if (buttonRef.current) {
@@ -30,9 +29,8 @@ export const useContactForm = () => {
 
         try {
             const { serviceId, templateId, userId } = emailJsConfig;
-            const result = await emailjs.sendForm(serviceId, templateId, formRef.current, userId);
+            await emailjs.sendForm(serviceId, templateId, formRef.current, userId);
 
-            console.log(result.text);
             setDone(true);
 
             setTimeout(() => {
@@ -45,9 +43,8 @@ export const useContactForm = () => {
 
             reset();
         } catch (error) {
-            console.log(error.text);
+            console.error(error.text);
             alert('Sorry, there was an error sending your message. Please try again later or contact us directly.');
-            console.log(error.text);
         } finally {
             setIsSubmitting(false);
             if (buttonRef.current) {

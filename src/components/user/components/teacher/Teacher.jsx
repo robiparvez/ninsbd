@@ -1,25 +1,12 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import { TEACHERS } from './Data';
-import blankProfilePicture from '../../images/teachers/blank-profile-picture.png';
+import { Col, Container, Row } from 'react-bootstrap';
+import { TEACHERS } from 'src/components/user/Data';
+import { useTeamRenderer } from 'src/hooks/useTeamRenderer';
+import blankProfilePicture from 'src/components/user/images/teachers/blank-profile-picture.png';
 import './teacher.css';
 
 export default function Teacher() {
-    const teachers = TEACHERS.map((teacher, index) => (
-        <Col xs={12} sm={6} md={4} lg={4} key={index + 1}>
-            <div className={`our-team ${teacher.image === blankProfilePicture ? 'no-animation' : ''}`}>
-                <div className='picture'>
-                    <Image src={teacher.image} fluid alt={teacher.name} />
-                </div>
-                <div className='team-content'>
-                    <h3 className='name'>{teacher.name}</h3>
-                    <h4 className='title'>{teacher.position}</h4>
-                    <h4 className='title'>{teacher.qualification}</h4>
-                    <h4 className='title'>রেজিঃ নং: {teacher.registrationNumber}</h4>
-                    <h4 className='title'>মোবাইল: {teacher.mobileNumber}</h4>
-                </div>
-            </div>
-        </Col>
-    ));
+    const getAnimationClass = (teacher) => teacher.image === blankProfilePicture ? 'no-animation' : '';
+    const teachers = useTeamRenderer(TEACHERS, getAnimationClass);
 
     return (
         <section>
@@ -31,7 +18,6 @@ export default function Teacher() {
                 </Row>
             </Container>
             <Container className='mt-5 mb-5'>
-                {/* Teachers */}
                 <Row>{teachers}</Row>
             </Container>
         </section>

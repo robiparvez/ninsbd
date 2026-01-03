@@ -1,10 +1,11 @@
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
-import './contact.css';
-import { HELP_TEXT, EMAIL_ADDRESS, FACEBOOK_LINK, LOCATION, PHONE_NUMBER } from '../../container/footer/Data';
-import { useContactForm } from '../../../../hooks/useContactForm';
+import { HELP_TEXT, EMAIL_ADDRESS, FACEBOOK_LINK, LOCATION, PHONE_NUMBER } from 'src/components/user/Data';
+import { useContactForm } from 'src/hooks/useContactForm';
 import SEO from 'src/SEO/SEO';
 import { pageSEO } from 'src/SEO/seoConfig';
-import { localBusinessSchema, breadcrumbSchema } from 'src/SEO/schemas';
+import { localBusinessSchema } from 'src/SEO/schemas';
+import { useBreadcrumbs } from 'src/hooks/useBreadcrumbs';
+import './contact.css';
 
 export default function Contact() {
     const {
@@ -17,7 +18,7 @@ export default function Contact() {
         handleSubmit
     } = useContactForm();
 
-    const breadcrumbs = breadcrumbSchema([
+    const breadcrumbs = useBreadcrumbs([
         { name: 'Home', url: 'https://www.ninsbd.com/' },
         { name: 'Contact', url: 'https://www.ninsbd.com/contact' }
     ]);

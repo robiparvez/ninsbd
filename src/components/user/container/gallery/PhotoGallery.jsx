@@ -2,10 +2,10 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import "./lightbox-mobile.css";
 import { Zoom, Slideshow, Counter, Fullscreen } from "yet-another-react-lightbox/plugins";
-import { Four, FourThumb, One, OneThumb, Three, ThreeThumb, Two, TwoThumb } from './Data';
-import { useLightbox } from '../../../../hooks/useLightbox';
+import { Four, FourThumb, One, OneThumb, Three, ThreeThumb, Two, TwoThumb } from 'src/components/user/Data';
+import { useLightbox } from 'src/hooks/useLightbox';
+import "./lightbox-mobile.css";
 
 export default function PhotoGallery() {
     const slides = [

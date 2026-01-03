@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Zoom, Slideshow, Counter, Fullscreen } from "yet-another-react-lightbox/plugins";
-import { Four, FourThumb, One, OneThumb, Three, ThreeThumb, Two, TwoThumb } from '../../components/notice/Data';
+import { NoticeFour as Four, NoticeFourThumb as FourThumb, NoticeOne as One, NoticeOneThumb as OneThumb, NoticeThree as Three, NoticeThreeThumb as ThreeThumb, NoticeTwo as Two, NoticeTwoThumb as TwoThumb } from 'src/components/user/Data';
 import './latest-news.css';
 
 export default function LatestNews() {

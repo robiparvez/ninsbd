@@ -1,13 +1,11 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import parse from 'html-react-parser';
+import { ADMISSION_ELIGIBILITY, BEHAVIOUR_RULES, BENEFITS, DOCS_AT_ADMISSION_TIME, DOCS_WITH_ADMISSION_FORM, INTRODUCTION } from 'src/components/user/Data';
+import { useCourseStyles } from 'src/hooks/useCourseStyles';
 import './course.css';
-import { ADMISSION_ELIGIBILITY, BEHAVIOUR_RULES, BENEFITS, DOCS_AT_ADMISSION_TIME, DOCS_WITH_ADMISSION_FORM, INTRODUCTION } from './Data';
 
 export default function Course() {
-    const headingColCss = 'mx-auto px-lg-5 text-left mt-5';
-    const titleTextUnderlineCss = { borderTop: '4px solid green', width: 50 };
-    const subTextCssIntro = 'mt-3 text-muted w-100';
-    const subTextCssOthers = 'mt-3 text-muted w-100 new-line';
+    const { headingColCss, titleTextUnderlineCss, subTextCssIntro, subTextCssOthers } = useCourseStyles();
 
     return (
         <section>
@@ -34,23 +32,6 @@ export default function Course() {
                         <p className={subTextCssOthers}>{BENEFITS}</p>
                     </Col>
                 </Row>
-
-                {/* <Row style={{ backgroundColor: '#fff' }} data-aos='fade-right'>
-                    <Col className={headingColCss}>
-                        <h3>ফি সমূহ</h3>
-                        <div style={titleTextUnderlineCss}></div>
-                        <div className={subTextCssIntro}>
-                            <p>২০২১-২০২২ইং শিক্ষাবর্ষে ভর্তিচ্ছুক ছাত্র/ছাত্রীদের জন্য প্রদেয় ফি সমূহ (৩ বৎসরের জন্য)</p>
-                            <p><b>ভর্তি ফি = ৪০,০০০/= টাকা</b></p>
-                            <p><b>উন্নয়ন ফি = ৬৫,০০০/= টাকা</b></p>
-                            <p><b>সেশন ফি = ৫০,০০০/= টাকা</b></p>
-                            <p><b>টিউশন ফি = ৫৫,০০০/= টাকা</b></p>
-                            <p><b>সর্বমোট = ২,১০,০০০/= টাকা</b></p>
-                            <p>*মাসিক টিউশন ফি বাবদ ১৫০০/= টাকা এবং আবাসিক সুবিধা পেতে হোস্টেল ফি বাবন মাসিক ১০০০/- টাকা অগ্রিম পরিশোধ করতে হবে।</p>
-                            <p>*এ ছাড়া পরীক্ষার ফিস, রেজিস্ট্রেশন ফিস অলাদ পরিশোধ করতে হবে।</p>
-                        </div>
-                    </Col>
-                </Row> */}
 
                 <Row style={{ backgroundColor: '#fff' }} data-aos='fade-right'>
                     <Col className={headingColCss}>

@@ -1,4 +1,4 @@
-import { FB_CHAT } from '../../Data';
+import { FB_CHAT } from 'src/components/user/Data';
 import './FbMessengerChat.css';
 
 export default function FbMessengerChat() {

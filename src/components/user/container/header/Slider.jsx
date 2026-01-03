@@ -12,9 +12,6 @@ export default function Slider() {
                     <Carousel>
                         <Carousel.Item>
                             <Image className='d-block w-100' src={slide01} alt='First slide' fluid />
-                            <Carousel.Caption className='text-left slide-in-top'>
-                                {/* <h1>মাননীয় কাউন্সিল সদস্যদের পরিদর্শন</h1> */}
-                            </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>
                             <Image className='d-block w-100' src={slide02} alt='First slide' fluid />

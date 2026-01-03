@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { INTRODUCTION } from './Data';
+import { INTRODUCTION } from 'src/components/user/Data';
 import parse from 'html-react-parser';
 
 export default function CourseContainer() {

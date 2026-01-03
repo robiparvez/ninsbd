@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import AppRouter from './AppRouter';
+import AppRouter from 'src/components/router/AppRouter';
 
 /**
  * All the registered routes for the application.

@@ -1,35 +1,11 @@
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import { DIRECTORS, GOVERNING_BODY } from './Data';
+import { Col, Container, Row } from 'react-bootstrap';
+import { DIRECTORS, GOVERNING_BODY } from 'src/components/user/Data';
+import { useTeamRenderer } from 'src/hooks/useTeamRenderer';
 import './director.css';
 
 export default function Director() {
-    const governingBodies = GOVERNING_BODY.map((governingBody, index) => (
-        <Col xs={12} sm={6} md={4} lg={4} key={index + 1}>
-            <div className='our-team'>
-                <div className='picture'>
-                    <Image src={governingBody.image} fluid />
-                </div>
-                <div className='team-content'>
-                    <h3 className='name'>{governingBody.name}</h3>
-                    <h4 className='title'>{governingBody.designation}</h4>
-                </div>
-            </div>
-        </Col>
-    ));
-
-    const directors = DIRECTORS.map((director, index) => (
-        <Col xs={12} sm={6} md={4} lg={4} key={index + 1}>
-            <div className='our-team'>
-                <div className='picture'>
-                    <Image src={director.image} fluid />
-                </div>
-                <div className='team-content'>
-                    <h3 className='name'>{director.name}</h3>
-                    <h4 className='title'>{director.designation}</h4>
-                </div>
-            </div>
-        </Col>
-    ));
+    const governingBodies = useTeamRenderer(GOVERNING_BODY);
+    const directors = useTeamRenderer(DIRECTORS);
 
     return (
         <section>

@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import LatestNews from './LatestNews';
+import LatestNews from 'src/components/user/container/news/LatestNews';
 import './news.css';
 
 const News = () => {
