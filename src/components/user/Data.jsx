@@ -1,4 +1,4 @@
-// Images
+// Teachers
 import teacher1 from 'src/components/user/images/teachers/1.jpg';
 import teacher2 from 'src/components/user/images/teachers/2.jpg';
 import teacher3 from 'src/components/user/images/teachers/3.jpg';
@@ -6,7 +6,7 @@ import teacher4 from 'src/components/user/images/teachers/4.jpg';
 import blankProfilePicture from 'src/components/user/images/teachers/blank-profile-picture.png';
 
 // Directors
-import drmdjahurulhaque from 'src/components/user/images/directors/1-dr-md-jahurul-haque.jpg';
+// import drmdjahurulhaque from 'src/components/user/images/directors/1-dr-md-jahurul-haque.jpg';
 import begumrokeyalovely from 'src/components/user/images/directors/2-begum-rokeya-lovely.jpg';
 import mdafjalhossan from 'src/components/user/images/directors/3-md-afjal-hossan.jpg';
 import mrssuriyabegum from 'src/components/user/images/directors/4-mrs-suriya-begum.jpg';
@@ -14,8 +14,10 @@ import mdabdussamad from 'src/components/user/images/directors/5-md-abdus-samad.
 import drrokunuzzamanpavel from 'src/components/user/images/directors/6-dr-rokunuzzaman-pavel.jpg';
 import drnurmohammad from 'src/components/user/images/directors/7-dr-nur-mohammad.jpg';
 import humayrahimu from 'src/components/user/images/directors/8-humayra-himu.jpg';
+import engrkamrulhasan from 'src/components/user/images/directors/9-engr-kamrul-hasan.jpg';
+import engrrobiuzzamanparvez from 'src/components/user/images/directors/10-engr-robiuzzaman-parvez.jpg';
 
-// Staff
+// Staffs
 import AtikaRakhi from 'src/components/user/images/staffs/1-atika-rakhi.jpg';
 import DayalChandra from 'src/components/user/images/staffs/2-dayal-chandra.jpg';
 import Eliaskanchan from 'src/components/user/images/staffs/3-elias-kanchan.jpg';
@@ -24,12 +26,11 @@ import IdrisAli from 'src/components/user/images/staffs/5-idris-ali.jpg';
 import NiyotiRani from 'src/components/user/images/staffs/6-niyoti-rani.jpg';
 import ShakilIbneShafiq from 'src/components/user/images/staffs/7-shakil-ibne-shafiq-alam.jpg';
 
-export const INSTITUTE_NAME = `নর্দান ইন্সটিটিউট অব \n নার্সিং সায়েন্স (এনআইএনএস)`;
-
-export const FB_CHAT = {
-    pageId: '101067775464002',
-    themeColor: '#0084FF',
-};
+// Slides
+import slide01 from 'src/components/user/images/slides/slide-01.jpg';
+import slide02 from 'src/components/user/images/slides/slide-02.jpg';
+import slide03 from 'src/components/user/images/slides/slide-03.jpg';
+import slide04 from 'src/components/user/images/slides/slide-04.jpg';
 
 // Teachers
 export const TEACHERS = [
@@ -39,7 +40,7 @@ export const TEACHERS = [
         registrationNumber: '৮৯৯',
         position: 'অধ্যক্ষ',
         qualification: 'এমপিএইচ',
-        mobileNumber: '০১৭১০-৯৮৭৫৮০',
+        // mobileNumber: '০১৭১০-৯৮৭৫৮০',
     },
     {
         name: 'সানজিদা আক্তার',
@@ -47,7 +48,7 @@ export const TEACHERS = [
         registrationNumber: '১৫৮৪৮',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১স৭৩৬৯০০৬৪',
+        // mobileNumber: '০১স৭৩৬৯০০৬৪',
     },
     {
         name: 'মো: আরিফুল হক',
@@ -55,7 +56,7 @@ export const TEACHERS = [
         registrationNumber: '২৬০১১',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭৫০৮৭২৮৬৩',
+        // mobileNumber: '০১৭৫০৮৭২৮৬৩',
     },
     {
         name: 'মোসা: শারমিন আক্তার',
@@ -63,7 +64,7 @@ export const TEACHERS = [
         registrationNumber: '১৭৭০৭',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭০১০৮৩৭৪৮',
+        // mobileNumber: '০১৭০১০৮৩৭৪৮',
     },
     {
         name: 'মোসা: তানজিলা আফরিন',
@@ -71,7 +72,7 @@ export const TEACHERS = [
         registrationNumber: '২৬০২৮',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭৩১২২১৭৮৭',
+        // mobileNumber: '০১৭৩১২২১৭৮৭',
     },
     {
         name: 'মোসা: নুসরাত জাহান',
@@ -79,7 +80,7 @@ export const TEACHERS = [
         registrationNumber: '২৭০৬৬',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭২২১৮১০৩১',
+        // mobileNumber: '০১৭২২১৮১০৩১',
     },
     {
         name: 'মোসা: নাহিদা আক্তার',
@@ -87,7 +88,7 @@ export const TEACHERS = [
         registrationNumber: '১৫৮৪০',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭৬১৩৭৫৪৭৭',
+        // mobileNumber: '০১৭৬১৩৭৫৪৭৭',
     },
     {
         name: 'আক্রিমা জাহান',
@@ -95,7 +96,7 @@ export const TEACHERS = [
         registrationNumber: '২৬০১৮',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭২২১৭৮১১৭',
+        // mobileNumber: '০১৭২২১৭৮১১৭',
     },
     {
         name: 'মো: শাহরিয়ার নাজিম জয়',
@@ -103,7 +104,7 @@ export const TEACHERS = [
         registrationNumber: '২৬০১৪',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৭৫১২০৫০৩৯',
+        // mobileNumber: '০১৭৫১২০৫০৩৯',
     },
     {
         name: 'মো: হুমায়ুন কবির',
@@ -111,7 +112,7 @@ export const TEACHERS = [
         registrationNumber: '২৬০২৬',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৬২৮২৭৭৩১৯',
+        // mobileNumber: '০১৬২৮২৭৭৩১৯',
     },
     {
         name: 'মো: কাউসার আলম',
@@ -119,63 +120,35 @@ export const TEACHERS = [
         registrationNumber: '১৫৮৫৩',
         position: 'নার্সিং ইন্সট্রাক্টর',
         qualification: 'বি.এসসি ইন নার্সিং',
-        mobileNumber: '০১৬৪৮২৮৪৩৭৬',
-    },
-];
-
-export const GOVERNING_BODY = [
-    {
-        name: 'ডাঃ জহুরুল হক',
-        image: drmdjahurulhaque,
-        designation: 'ব্যবস্থাপনা পরিচালক',
-    },
-    {
-        name: 'বেগম রোকেয়া লাভলী',
-        image: begumrokeyalovely,
-        designation: 'সভাপতি',
-    },
-    {
-        name: 'ডাঃ রোকুনুজ্জামান পাভেল',
-        image: drrokunuzzamanpavel,
-        designation: 'পরিচালক',
-    },
-    {
-        name: 'মোঃ আফজাল হোসেন',
-        image: mdafjalhossan,
-        designation: 'পরিচালক',
-    },
-    {
-        name: 'মিসেস সুরিয়া বেগম',
-        image: mrssuriyabegum,
-        designation: 'নিবন্ধক',
-    },
-    {
-        name: 'মোঃ আব্দুস সামাদ',
-        image: mdabdussamad,
-        designation: 'অধ্যক্ষ',
-    },
-    {
-        name: 'ডাঃ নুর মোহাম্মদ',
-        image: drnurmohammad,
-        designation: 'পরিচালক',
+        // mobileNumber: '০১৬৪৮২৮৪৩৭৬',
     },
 ];
 
 export const DIRECTORS = [
-    {
+    /* {
         name: 'ডাঃ জহুরুল হক',
         image: drmdjahurulhaque,
         designation: 'ব্যবস্থাপনা পরিচালক',
-    },
+    }, */
     {
         name: 'বেগম রোকেয়া লাভলী',
         image: begumrokeyalovely,
         designation: 'সভাপতি',
     },
     {
+        name: 'ইঞ্জি. কামরুল হাসান',
+        image: engrkamrulhasan,
+        designation: 'নির্বাহী পরিচালক',
+    },
+    {
         name: 'ডাঃ রোকুনুজ্জামান পাভেল',
         image: drrokunuzzamanpavel,
-        designation: 'পরিচালক',
+        designation: 'ব্যবস্থাপনা পরিচালক',
+    },
+    {
+        name: 'ইঞ্জি. রবিউজ্জামান পারভেজ',
+        image: engrrobiuzzamanparvez,
+        designation: 'ব্যবস্থাপনা পরিচালক',
     },
     {
         name: 'মোঃ আফজাল হোসেন',
@@ -188,12 +161,23 @@ export const DIRECTORS = [
         designation: 'পরিচালক',
     },
     {
+        name: 'সরদার মোঃ আবুল কাশেম',
+        image: teacher1,
+        designation: 'অধ্যক্ষ',
+    },
+    {
+        name: 'সানজিদা আক্তার',
+        image: teacher2,
+        designation: 'নার্সিং ইন্সট্রাক্টর',
+    },
+    /* {
         name: 'হুমায়রা হিমু',
         image: humayrahimu,
         designation: 'কোর্স সমন্বয়ক',
-    },
+    }, */
 ];
 
+// Staffs
 export const STAFFS = [
     {
         id: 1,
@@ -246,7 +230,56 @@ export const STAFFS = [
     },
 ];
 
-// Course
+export const INSTITUTE_NAME = `নর্দান ইন্সটিটিউট অব \n নার্সিং সায়েন্স (এনআইএনএস)`;
+
+export const FB_CHAT = {
+    pageId: '101067775464002',
+    themeColor: '#0084FF',
+};
+
+export const GOVERNING_BODY = [
+    /* {
+        name: 'ডাঃ জহুরুল হক',
+        image: drmdjahurulhaque,
+        designation: 'ব্যবস্থাপনা পরিচালক',
+    }, */
+    {
+        name: 'বেগম রোকেয়া লাভলী',
+        image: begumrokeyalovely,
+        designation: 'সভাপতি',
+    },
+    {
+        name: 'ডাঃ রোকুনুজ্জামান পাভেল',
+        image: drrokunuzzamanpavel,
+        designation: 'ব্যবস্থাপনা পরিচালক',
+    },
+    {
+        name: 'ইঞ্জি. রবিউজ্জামান পারভেজ',
+        image: engrrobiuzzamanparvez,
+        designation: 'ব্যবস্থাপনা পরিচালক',
+    },
+    {
+        name: 'মোঃ আফজাল হোসেন',
+        image: mdafjalhossan,
+        designation: 'পরিচালক',
+    },
+    {
+        name: 'মিসেস সুরিয়া বেগম',
+        image: mrssuriyabegum,
+        designation: 'নিবন্ধক',
+    },
+    /* {
+        name: 'মোঃ আব্দুস সামাদ',
+        image: mdabdussamad,
+        designation: 'অধ্যক্ষ',
+    }, */
+    {
+        name: 'ডাঃ নুর মোহাম্মদ',
+        image: drnurmohammad,
+        designation: 'পরিচালক',
+    },
+];
+
 export const INTRODUCTION = `
 <p>
     <b>প্রদত্ত ডিগ্রি</b> : ডিপ্লোমা ইন নার্সিং সায়েন্স এন্ড মিওয়াইফারী।
@@ -374,6 +407,29 @@ export {
     Twelve,
     TwelveThumb,
 };
+
+// Slides
+export const SLIDES = [
+    {
+        src: slide01,
+        alt: 'First slide',
+    },
+    {
+        src: slide02,
+        alt: 'Second slide',
+        caption: 'মাননীয় কাউন্সিল সদস্যদের পরিদর্শন',
+    },
+    {
+        src: slide03,
+        alt: 'Third slide',
+        caption: 'খাদ্য মেলা ২০২২',
+    },
+    {
+        src: slide04,
+        alt: 'Fourth slide',
+        caption: 'ভাষা শহীদের প্রতি শ্রদ্ধাজ্ঞাপন',
+    },
+];
 
 // Contact
 export const emailJsConfig = {
